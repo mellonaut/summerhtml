@@ -6,19 +6,21 @@
     body {
       margin: 0;
       padding: 0;
-      background-image: url('https://partners.feedcenterministry.org/static/landing.jpg');
+      background-image: url('https://partners.feedcenterministry.org/static/landing.png');
       background-size: cover;
       background-position: center;
       height: 100vh;
       display: flex;
       justify-content: center;
-      align-items: center;
+      align-items: flex-end; /* Align items to the bottom */
     }
     .link-overlay {
       position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
+      bottom: 0.5in; /* Adjust the distance from the bottom */
+      left: calc(50% + 2in); /* Adjust the distance from the left (increased to 2 inches) */
+      transform: translate(-50%, 0);
+      font-size: 30px; /* Adjust the font size */
+      color: transparent; /* Make the text transparent */
     }
   </style>
 </head>
