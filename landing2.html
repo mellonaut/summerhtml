@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Landing Page</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      height: 100vh;
+      background-color: black; /* Set the background color to black */
+      display: flex;
+      justify-content: center;
+      align-items: flex-end; /* Align items to the bottom */
+    }
+    .link-overlay {
+      position: absolute;
+      bottom: 0.5in; /* Adjust the distance from the bottom */
+      left: calc(50% + 2in); /* Adjust the distance from the left (increased to 2 inches) */
+      transform: translate(-50%, 0);
+      font-size: 60px; /* Adjust the font size (doubled to cover the area) */
+      color: transparent; /* Make the text transparent */
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="https://partners.feedcenterministry.org/static/landing.png" alt="Background Image">
+    <a href="#" class="link-overlay" id="link">Click here</a>
+  </div>
+
+  <script>
+    document.getElementById('link').addEventListener('click', function(event) {
+      event.preventDefault(); // Prevent the default link behavior
+      // Redirect to the specified URL
+      window.location.href = 'https://partners.feedcenterministry.org/static/calendar.html?view';
+    });
+  </script>
+</body>
+</html>
