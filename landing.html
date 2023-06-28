@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Landing Page</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-image: url('https://partners.feedcenterministry.org/static/landing.jpg?view');
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .link-overlay {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  </style>
+</head>
+<body>
+  <a href="#" class="link-overlay" id="link">Click here</a>
+
+  <script>
+    document.getElementById('link').addEventListener('click', function(event) {
+      event.preventDefault(); // Prevent the default link behavior
+      // Redirect to the specified URL
+      window.location.href = 'https://partners.feedcenterministry.org/static/calendar.html?view';
+    });
+  </script>
+</body>
+</html>
