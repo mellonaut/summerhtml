@@ -1,0 +1,52 @@
+:root {
+  --primary: #9aa2db; /* Primary color */
+
+  /* Secondary color, a shade lighter than primary */
+  --secondary: #5a67d8;
+
+  /* Background color, a very light shade that won't contrast too heavily with white */
+  --background: #f3f4f6;
+
+  /* Text color, something dark for contrast against the light background */
+  --text: #1a202c;
+
+  /* Accent color, a contrasting color for calls to action or highlights */
+  --accent: #62b190;
+
+  /* Light and dark variants of primary color for hover and active states */
+  --primary-light: #cbd0f0;
+  --primary-dark: #2c3382;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--background);
+  max-width: 100vw;
+  font-family: Arial, sans-serif;
+  color: var(--text);
+}
+
+/* Style headings */
+h1,
+h2,
+h3 {
+  color: var(--primary);
+}
+
+/* Style buttons */
+.button {
+  background-color: var(--accent);
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.button:hover {
+  background-color: var(--primary-light);
+}
